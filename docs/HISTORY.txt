@@ -2,6 +2,18 @@
 Change Log
 ==========
 
+0.6.10 Security Fixes
+--------------------------------------------------------------------
+30-March-2026
+
+Security:
+ * Update Pillow dependency: Python <=3.7 bumped to 9.5.0, Python 3.8 to >=10.3.0 (fixes multiple high/critical CVEs)
+ * Update pywin32 minimum to >=301 (fixes integer overflow CVE)
+ * Replace ``pickle`` with ``json`` for match history serialization in ``windows/application.py`` (CWE-502)
+ * Remove ``shell=True`` from ``subprocess.Popen`` in ``linux/application.py`` (CWE-78)
+ * Replace ``shell=True`` subprocess in ``linux/clipboard.py`` with ``shutil.which()`` (CWE-78)
+ * Add Security Audit CI workflow (bandit + pip-audit) on every push/PR to master
+
 0.6.9 Last Python 2.7 Compatible Version
 --------------------------------------------------------------------
 06-January-2025
