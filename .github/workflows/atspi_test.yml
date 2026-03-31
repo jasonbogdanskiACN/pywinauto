@@ -4,6 +4,8 @@ on:
     branches: [ "atspi", "master" ]
   pull_request:
     branches: [ "atspi", "master" ]
+permissions:
+  contents: read
 jobs:
   Linux:
     runs-on: ${{ matrix.os }}
