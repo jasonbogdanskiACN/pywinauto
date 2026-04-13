@@ -2,7 +2,7 @@ docutils<0.18
 pywin32>=301; python_version <= '3.6' and platform_system == 'Windows'
 pywin32>=301; python_version > '3.6' and platform_system == 'Windows'
 Pillow>=10.3.0; python_version == '3.8'
-Pillow==12.1.1; python_version > '3.8'
+Pillow==12.2.0; python_version > '3.8'
 coverage
 pytest==4.6.11; python_version <= '3.6'
 pytest; python_version > '3.6'
